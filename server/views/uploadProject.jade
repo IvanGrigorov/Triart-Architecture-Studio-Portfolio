@@ -1,0 +1,40 @@
+extends shared/layout
+block content
+	form(method="post" enctype="multipart/form-data")
+		span #{constantsSet.form.name}
+		input(type="text" class="form-control req username" name="title" placeholder="Required")
+		br
+		span #{constantsSet.form.area}
+		input(type="text" class="form-control req password" name="area" placeholder="Required")
+		br
+		span #{constantsSet.form.location}
+		input(type="text" class="form-control req password" name="addres" placeholder="Required")
+		br
+		span #{constantsSet.form.investor}
+		input(type="text" class="form-control req password" name="investor" placeholder="Required")
+		br 
+		label(for="selectCategory") #{constantsSet.form.category}
+		select(class="form-control" id="selectCategory" name="category")
+			option(value="Public buildings") Обществени сгради
+			option(value="Offices") Офиси
+			option(value="Hotels") Хотели
+			option(value="Interiors") Интериори
+			option(value="Residential buildings") Жилищни сгради
+			option(value="Industrial Buildings") Индустриални сгради
+			option(value="Commercial Buildings") Търговски сгради
+		br
+		span #{constantsSet.form.photoCategory}
+		<input type='file' name="categoryFile">
+		br
+		span #{constantsSet.form.galleryPhotos}
+		<input type='file' name="projectPhotoOne">
+		br
+		<input type='file' name="projectPhotoTwo">
+		br
+		<input type='file' name="projectPhotoThree">
+		br
+		<input type='file' name="projectPhotoFour">
+		br
+		<input type='file' name="projectPhotoFive">
+		br
+		input(type="submit" id="signIn" class="btn btn-default" value="#{constantsSet.buttons.upload}")

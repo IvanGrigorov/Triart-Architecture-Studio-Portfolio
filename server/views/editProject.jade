@@ -1,0 +1,27 @@
+extends shared/layout
+block content
+    form(method="post" enctype="multipart/form-data")
+        span Старо заглавие: 
+        input(type="text" class="form-control req username" name="oldTitle" placeholder="Required" value="#{project.title}" disabled)
+        br
+        span #{constantsSet.form.name}
+        input(type="text" class="form-control req username" name="title" placeholder="Required" value="#{project.title}")
+        br
+        span #{constantsSet.form.area}
+        input(type="text" class="form-control req password" name="area" placeholder="Required" value="#{project.area}")
+        br
+        span #{constantsSet.form.location}
+        input(type="text" class="form-control req password" name="addres" placeholder="Required" value="#{project.addres}")
+        br
+        span #{constantsSet.form.investor}
+        input(type="text" class="form-control req password" name="investor" placeholder="Required" value="#{project.investor}")
+        br 
+        label(for="selectCategory") #{constantsSet.form.category}
+        -var optionsForCategories = ["Public buildings", "Offices", "Hotels", "Interiors", "Residential buildings", "Industrial Buildings", "Commercial Buildings"];
+        select(class="form-control" id="selectCategory" name="category")
+            option #{project.category} 
+            each option in optionsForCategories
+                if (option !== project.category)
+                    option #{option}
+        br
+        input(type="submit" id="signIn" class="btn btn-default" value="#{constantsSet.buttons.change}")

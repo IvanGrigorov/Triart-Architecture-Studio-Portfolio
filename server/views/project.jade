@@ -1,0 +1,37 @@
+extends shared/layout
+block content
+	section
+		div(class="container")
+			div(class="row")
+				div(class="col-md-5")
+					div(class="Project-Info")
+						h2 #{project.title}
+						h4 
+							span #{constantsSet.project.area} #{project.area}
+						h4
+							span #{constantsSet.project.investor} #{project.investor}
+						h4 
+							span #{constantsSet.project.location} #{project.addres}
+							
+				div(class="col-md-7")
+					div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+						ol(class="carousel-indicators")
+							- for (var i = 0, photoCollectionLength = project.files.length; i < photoCollectionLength; i++)
+								- if (i === 0)
+									li(data-target="#carousel-example-generic" data-slide-to=i class="active")
+								- else
+									li(data-target="#carousel-example-generic" data-slide-to=i)
+
+						div(class="carousel-inner")
+							- for (var i = 0, photoCollectionLength = project.files.length; i < photoCollectionLength; i++)
+								- if (i === 0)
+									div(class="item active")
+										img(src="/uploadedImages/projects/" + project.category + "/" + project.title + "/" + project.files[i] alt="..." class="img-responsive")
+								- else 
+									div(class="item")
+										img(src="/uploadedImages/projects/" + project.category + "/" + project.title + "/" + project.files[i] alt="..." class="img-responsive")
+
+							a(class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev")
+								span(class="glyphicon glyphicon-chevron-left")
+							a(class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next")
+								span(class="glyphicon glyphicon-chevron-right")

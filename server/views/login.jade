@@ -1,0 +1,10 @@
+extends shared/layout
+block content
+	form(method="post")
+		span #{constantsSet.form.username}
+		input(type="text" class="form-control req username" name="username" placeholder="Required")
+		br
+		span #{constantsSet.form.password}
+		input(type="password" class="form-control req password" name="password" placeholder="Required")
+		br
+		input(type="submit" id="signIn" class="btn btn-default" value="#{constantsSet.buttons.logIn}")

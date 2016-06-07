@@ -1,0 +1,495 @@
+﻿#bio-container h3 {
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: #FF5A00;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-family: Arial, Helvetica, sans-serif, Georgia, 'Nimbus Roman No9 L', serif;
+    height: 100%;
+}
+
+.col-sm-4 img {
+    height: auto;
+    max-width: 100%;
+}
+
+.dropdown > a {
+    border: 2px solid transparent;
+}
+
+.dropdown.open > a {
+    border-radius: 10px;
+    border: 2px solid #ff5a00;
+}
+
+.dropdown.open {
+    border-radius: 10px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#64686d+0,282828+100 */
+    background: rgb(100, 104, 109);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 104, 109, 1)), color-stop(100%, rgba(40, 40, 40, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#64686d', endColorstr='#282828', GradientType=0);
+    /* IE6-9 */
+}
+
+.navbar-default {
+    font-size: 120%;
+    border: 2px solid #ff5a00;
+    border-radius: 20px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#64686d+0,282828+100 */
+    background: rgb(100, 104, 109);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 104, 109, 1)), color-stop(100%, rgba(40, 40, 40, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#64686d', endColorstr='#282828', GradientType=0);
+    /* IE6-9 */
+}
+
+.navbar-default .nav .dropdown:hover .dropdown-menu,
+.navbar-default .nav .dropdown .dropdown-menu {
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#64686d+0,282828+100 */
+    background: rgb(100, 104, 109);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 104, 109, 1)), color-stop(100%, rgba(40, 40, 40, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#64686d', endColorstr='#282828', GradientType=0);
+    /* IE6-9 */
+    border: 2.5px solid #ff5a00;
+    padding: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+hr {
+    background-color: #000;
+    margin: 3px;
+    width: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 0px;
+    height: 1px;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#64686d+0,282828+100 */
+    background: rgb(100, 104, 109);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 104, 109, 1)), color-stop(100%, rgba(40, 40, 40, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#64686d', endColorstr='#282828', GradientType=0);
+    /* IE6-9 */
+    border-radius: 10px;
+    border: 2px solid #ff5a00;
+}
+
+.navbar-nav a {
+    color: #ff5a00 !important;
+    font-size: 1.3em;
+}
+
+#Contacts {
+    text-align: center;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#Contacts div {
+    display: inline-block;
+    margin: 3px;
+}
+
+footer {
+    border-top: 1px solid #ff5a00;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+#Button {
+    border: 2.5px solid #ff5a00;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#64686d+0,282828+100 */
+    background: rgb(100, 104, 109);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 104, 109, 1)), color-stop(100%, rgba(40, 40, 40, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(100, 104, 109, 1) 0%, rgba(40, 40, 40, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#64686d', endColorstr='#282828', GradientType=0);
+    /* IE6-9 */
+}
+
+h3 {
+    padding: 4%;
+    padding-left: 1%;
+    padding-bottom: 7%;
+    margin: 0px;
+}
+
+.container-fluid {
+    padding: 10px 20px;
+}
+
+.divider {
+    margin: 0px !important;
+    width: 75%;
+}
+
+.dropdown-menu > li > a:hover {
+    border-radius: 7px !important;
+    background-color: #ff5a00 !important;
+    color: #282828 !important;
+}
+
+.icon-bar {
+    border: 1px solid #ff5a00;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ff5a00;
+}
+
+#loader {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(230, 230, 230, 0.1);
+}
+
+#loader img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-inner:hover + h3 a {
+    border-radius: 3px;
+    background-color: #ff5a00;
+    color: #282828 !important;
+    text-decoration: none;
+}
+
+.Catalog:hover + div h3 a {
+    border-radius: 3px;
+    background-color: #ff5a00;
+    color: #282828 !important;
+    text-decoration: none;
+}
+
+h3 a {
+    color: #FF5A00 !important;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.col-sm-3 h3:hover a,
+.col-md-4 h3:hover a {
+    border-radius: 3px;
+    background-color: #ff5a00;
+    color: #282828 !important;
+    text-decoration: none;
+}
+
+.col-sm-3:not(#contacts-col) {
+    margin-bottom: 2%;
+}
+
+.Project-Summary,
+.Contact-Summary {
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    word-wrap: break-word;
+    border-bottom: 2px solid #ff5a00;
+    border-top: 2px solid #ff5a00;
+}
+
+.tabbed {
+    padding-left: 15px;
+}
+
+#carousel-example-generic {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(255, 133, 51, 0.7);
+}
+
+.carousel-indicators .active {
+    background-color: #ff5a00 !important;
+}
+
+.carousel-indicators li {
+    border-color: #ff5a00;
+}
+
+.carousel-control,
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #ff5a00;
+}
+
+.carousel-control.right:hover,
+.carousel-control.left:hover {
+    background-color: rgba(255, 133, 51, 0.2);
+}
+
+.carousel-control.right:focus,
+.carousel-control.left:focus {
+    background-color: transparent;
+    color: rgba(255, 133, 51, 0.3);
+}
+
+.carousel-control:focus,
+.carousel-control:hover {
+    opacity: 1 !important;
+}
+
+.Icons {
+    display: inline-block;
+    overflow: auto;
+}
+
+.Icons img {
+    border-radius: 30px;
+    border: 3px solid transparent;
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Contact-heading {
+    text-align: center;
+}
+
+#Contact-heading h1 {
+    margin: 0px;
+}
+
+#Contact-Icons {
+    position: relative;
+    margin-bottom: 3%;
+    height: auto;
+    top: 350px;
+}
+
+.Contact-Icons {
+    text-align: center;
+    height: 340px;
+}
+
+.full-page {
+    text-align: center;
+}
+
+#usedRow {
+    position: relative;
+}
+
+.not-visible {
+    display: none;
+    position: absolute;
+    bottom: 107px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottom {
+    margin-bottom: 3px;
+    7 height: auto;
+    position: relative;
+}
+
+#map {
+    margin-bottom: 1%;
+    display: none;
+    width: 100%;
+}
+
+footer {
+    padding: 1%;
+}
+
+.Contact-Summary h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Contact-Summary {
+    text-align: center;
+}
+
+.Contact-Summary p {
+    text-align: justify;
+}
+
+#bio-container {
+    font-size: 1.3em;
+}
+
+#bio-container a {
+    color: #FF5A00;
+    font-size: 1.3em;
+}
+
+
+/*
+#bio-container div{
+    margin: 10px;
+    padding: 10px;
+}*/
+
+#bio-container h2 {
+    font-weight: bold;
+    margin: 5%;
+    text-align: center;
+}
+
+#bio-container h3 {
+    font-weight: bold;
+    margin: 5% 1% 3% 1%;
+    text-align: center;
+}
+
+#bio-container h4 {
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.bio-table {
+    margin: 3% 0;
+}
+
+.bio-table thead th {
+    text-align: center;
+}
+
+.bio-table ul {
+    padding: 0;
+}
+
+#info-sect {
+    display: inline-block;
+    margin: 1%;
+    padding: 1%;
+    width: 77%;
+}
+
+#navbar-sect {
+    //background-color: yellow;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    //position: fixed;
+    vertical-align: top;
+    width: 20%;
+}
+
+#navbar-sect nav {
+    position: fixed;
+}
+
+#navbar-sect ul {
+    //background-color: red;
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar-sect ul li {
+    margin: 2%;
+}
+
+td > img {
+    height: 80% !important;
+}
+
+.ref > li {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    z-index: 2000;
+}

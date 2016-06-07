@@ -1,0 +1,95 @@
+doctype
+html
+  head
+    title Triart Architecture
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+    script(src="/js/bootstrap.min.js")
+    link(rel="stylesheet" href="/css/styles.css")
+    meta(name="viewport" content="width=device-width, user-scalable=no")
+  body
+    div(id="loader" style="display: none;")
+      img(src="/Images/Additional/block-loading.gif")
+    header
+      nav(class="navbar navbar-default")
+        div(class="container-fluid")
+          <!-- Brand and toggle get grouped for better mobile display -->
+          div(class="navbar-header")
+            button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="Button")
+              span(class="sr-only") Toggle navigation
+              span(class="icon-bar")
+              span(class="icon-bar")
+              span(class="icon-bar")
+
+            a(class="navbar-brand" href="/index")
+              img(src="/Images/Additional/customLogo.png" class="img-responsive")
+            a(href="/index/EN" class="btn btn-info") English
+            a(href="/index/BG" class="btn btn-info") Български
+            if (currentUser) 
+              span #{currentUser.username}  
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+            ul(class="nav navbar-nav navbar-right")
+              li(class="dropdown")
+                a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") #{constantsSet.menu.projects} 
+                  span(class="caret")
+                ul(class="dropdown-menu")
+                  li
+                    a(href="/categories/Public buildings") #{constantsSet.menu.dropdown.public}
+                  hr 
+                  li
+                    a(href="/categories/Offices") #{constantsSet.menu.dropdown.office}
+                  hr
+                  li
+                    a(href="/categories/Hotels") #{constantsSet.menu.dropdown.hotels}
+                  hr
+                  li
+                    a(href="/categories/Interiors") #{constantsSet.menu.dropdown.interiors}
+                  hr
+                  li
+                    a(href="/categories/Residential buildings") #{constantsSet.menu.dropdown.residential}
+                  hr
+                  li
+                    a(href="/categories/Industrial Buildings") #{constantsSet.menu.dropdown.industrial}
+                  hr
+                  li
+                    a(href="/categories/Commercial Buildings") #{constantsSet.menu.dropdown.commercial}
+              li
+                a(href="/company") #{constantsSet.menu.company}
+              li
+                a(href="/references") #{constantsSet.menu.references}
+              li
+                a(href="/contacts") #{constantsSet.menu.contacts}
+              if (currentUser)
+                li
+                  a(href="/uploadProject") #{constantsSet.menu.upload}
+                li
+                  a(href="/logout") #{constantsSet.menu.logOut}
+              if (!currentUser)
+                li
+                  a(href="/login") #{constantsSet.menu.logIn}
+              li
+                  a(href="/register") #{constantsSet.menu.registration}
+    .container
+        if (errorMessage)
+            .alert.alert-danger #{errorMessage}                           
+
+    block content
+
+    footer
+      div(class="container")
+        div(class="row")
+          div(class="col-sm-9")
+            img(src="/Images/Additional/copyright.png" class="img-responsive") 
+          div(class="col-sm-3" id="contacts-col")
+            div(id="Contacts")
+              div(id="linkedIn")
+                a(href="https://www.linkedin.com/pub/yanco-yonchev/53/776/932")
+                  img(src="/Images/Additional/linkedIn.png" class="img-responsive")
+              div(id="facebook")
+                a(href="https://www.facebook.com/profile.php?id=100001221842016&fref=ts")
+                  img(src="/Images/Additional/facebook.png" class="img-responsive")
+              div(id="mail")
+                a(href="mailto:ml4@abv.bg")
+                  img(src="/Images/Additional/mail.png" class="img-responsive")
+      script(src="/js/customJS.js")

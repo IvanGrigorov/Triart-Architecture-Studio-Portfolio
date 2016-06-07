@@ -1,0 +1,34 @@
+extends shared/layout
+block content
+    section(class="full-page")
+        div(class="container")
+            div(class="row" id="usedRow")
+                div(class="col-sm-4 col-sm-offset-4" id="Contact-heading")
+                    h1 #{constantsSet.pages.contactsPage.contacts}
+            div(class="row")
+                div(class="col-sm-12")
+                    div(class="Contact-Summary")
+                        p(style="text-align: center;") 
+                            h4 #{constantsSet.pages.contactsPage.contactsMessage}
+                            h3 #{constantsSet.pages.contactsPage.pleaseEnter}
+            div(class="row" id="bottom")
+                div(class="col-sm-4 Contact-Icons")
+                    div(class="not-visible")
+                        img(src="/Images/Additional/AdvertTel.png")
+                    div(class="Icons")
+                        img(src="/Images/Additional/firstfloorTel.png")
+                div(class="col-sm-4 Contact-Icons")
+                    div(class="not-visible") 
+                        img(src="/Images/Additional/AdvertE-mail.png")
+                    div(class="Icons")
+                        img(src="/Images/Additional/firstfloorE-mail.png")
+                div(class="col-sm-4 Contact-Icons")
+                    div(class="not-visible")
+                        img(src="/Images/Additional/AdvertAddress.png")
+                    div(class="Icons" id="adress")
+                        img(src="/Images/Additional/firstfloorAddress.png")
+            div(class="row")
+                div(class="col-md-8 col-md-offset-2")
+                    div(id="map")
+                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4878724142527!2d23.325837971270087!3d42.67220686930873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85ab3ea3c1ef%3A0x90e178a7958a4ace!2z0YPQuy4g4oCe0YHQsi4g0KLQtdC-0LTQvtGB0LjQuSDQotGK0YDQvdC-0LLRgdC60LjigJwgNTQsIDE0MDcg0KHQvtGE0LjRjw!5e0!3m2!1sbg!2sbg!4v1438457474579" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen)
+    

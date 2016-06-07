@@ -1,0 +1,25 @@
+extends shared/layout
+block content 
+    section
+        if (Object.keys(projects).length === 0)
+            h2 #{constantsSet.others.noCurrentProjects}
+        div(class="container")
+            div(class="row")
+                - for (var property in projects) 
+                    - if (projects.hasOwnProperty(property))
+                        div(class="col-sm-3")
+                                // a(href="/project/" + projects[property].title class="Catalog")
+                                if projects[property].hasOwnProperty('files')
+                                    img(src="/uploadedImages/categories/" + projects[property].category + "/" + projects[property].title + "/" + projects[property].files alt="" class="img-responsive")
+                                    div
+                                        h3
+                                            a(href="/project/" + projects[property].title) #{projects[property].title}
+                                    
+                                else
+                                    div
+                                        h3
+                                            a(href="/project/" + projects[property].title) #{projects[property].title}
+                                if (currentUser)
+                                    a(href="#" class="deleteProject" class="btn btn-sm btn-danger" style="margin-bottom: 5px; display: block !important;") #{constantsSet.pages.changeProjectPage.deleteProject}
+                                    
+                                    a(href="/editProject/" + projects[property].title class="editProject" style="display: block !important;" class="btn btn-sm btn-warning") #{constantsSet.pages.changeProjectPage.changeProject}
