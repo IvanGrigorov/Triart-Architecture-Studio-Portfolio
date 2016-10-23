@@ -37,10 +37,23 @@ describe('Testing Initial Point', () => {
         var validation = require("../server/utilities/validation");
 
         // Testing for correct behavior of path validation 
-        describe('Module: Validation -> MethodcheckIfPathExists()', () => {
+        describe('Module: Validation -> Method: checkIfPathExists()', () => {
             it('ShoulfReturnFalseIfPathIsNull', () => {
                 expect(validation.checkIfPathExists(null)).to.be.false;
             });
+            it('ShouldreturnFalseIfPathIsUndefined', () => {
+                expect(validation.checkIfPathExists(undefined)).to.be.false;
+            });
+            it('ShouldReturnFalseIfPathIsWrong', () => {
+                expect(validation.checkIfPathExists("Test")).to.be.false;
+            });
+            it('ShouldReturnFalseIfPathIsToFile', () => {
+                expect(validation.checkIfPathExists("UnitTests.js")).to.be.false;
+            });
+            it('ShouldReturnTrueForCorrectPath', () => {
+                expect(validation.checkIfPathExists("../Tests")).to.be.true;
+            });
+
         });
     });
 });
