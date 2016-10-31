@@ -53,6 +53,31 @@ describe('Testing Initial Point', () => {
             it('ShouldReturnTrueForCorrectPath', () => {
                 expect(validation.checkIfPathExists("../Tests")).to.be.true;
             });
+        });
+        //Testing for correct behaviour of value validation  
+        describe('Module: Vaidation -> Method: checkfIfValueIsUndefinedOrEmpty', () => {
+            it('ShouldReturnTrueForUndefined', () => {
+                expect(validation.checkIfValueIsUndefinedOrEmpty(undefined)).to.be.true;
+            });
+            it('ShouldReturnTrueForEmptyString', () => {
+                expect(validation.checkIfValueIsUndefinedOrEmpty("")).to.be.true;
+            });
+            it('ShouldReturnFalseForNull', () => {
+                expect(validation.checkIfValueIsUndefinedOrEmpty(null)).to.be.false;
+            });
+            it('ShouldReturnFalseForEmptyObject', () => {
+                expect(validation.checkIfValueIsUndefinedOrEmpty({})).to.be.false;
+            });
+            it('ShouldReturnFalseForEmptyArray', () => {
+                expect(validation.checkIfValueIsUndefinedOrEmpty([])).to.be.false;
+            });
+            it('ShouldReturnFalseForValue', () => {
+                expect(validation.checkIfValueIsUndefinedOrEmpty(1)).to.be.false;
+            });
+
+
+
+
 
         });
     });
