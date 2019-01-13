@@ -1,9 +1,9 @@
 var path = require('path');
 var rootPath = path.normalize(__dirname + '/../../');
 
-var connectionString = "mongodb://Ivan_Grigorov:20041894@ds023373.mlab.com:23373/triart_database";
+var connectionString = "###############################";
 if (process.env.NODE_ENV !== "production") {
-    connectionString = 'mongodb://localhost:27017/triart_a_new_final_testing_database';
+    connectionString = '###############################';
 }
 
 
